@@ -1,48 +1,258 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Mouhamed Diagne</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mouhamed DIAGNE — Infographiste & Content Manager</title>
+  <meta name="description" content="Portfolio de Mouhamed Diagne, infographiste & content manager, étudiant en L2 Communication Digitale à l’UNCHK. Logos, affiches, branding, visuels social media." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Bienvenue sur mon Portfolio</h1>
-    <p>Je suis <strong>Mouhamed Diagne</strong>, développeur passionné.</p>
+
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#accueil">MD.</a>
+      <nav class="nav">
+        <a href="#accueil">Accueil</a>
+        <a href="#about">À propos</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>À propos de moi</h2>
-    <p>
-      Je suis développeur en apprentissage, passionné par la programmation et la création de projets web.
-      Ce site présente mes réalisations et mes coordonnées.
-    </p>
-  </section>
-
-  <section id="projects">
-    <h2>Mes Projets</h2>
-    <div class="project">
-      <h3>Projet 1</h3>
-      <p>Description de ton premier projet.</p>
-      <a href="#">Voir le projet</a>
+  <!-- Hero -->
+  <section id="accueil" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Mouhamed <span>DIAGNE</span></h1>
+        <h2>Infographiste & Content Manager</h2>
+        <p class="lead">
+          Étudiant en L2 Communication Digitale à l’UNCHK. Je conçois des <strong>logos</strong>, <strong>affiches</strong>,
+          identités visuelles et visuels social media qui valorisent les marques et les événements.
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="#portfolio">Voir mes projets</a>
+          <a class="btn ghost" href="#contact">Me contacter</a>
+        </div>
+        <ul class="badges">
+          <li>Branding</li>
+          <li>Affiches & Flyers</li>
+          <li>Social Media</li>
+          <li>Motion simple</li>
+        </ul>
+      </div>
+      <div class="hero-photo">
+        <!-- Remplace profile.jpg par ta photo -->
+        <img src="assets/img/profile.jpg" alt="Photo de Mouhamed Diagne" />
+      </div>
     </div>
+  </section>
 
-    <div class="project">
-      <h3>Projet 2</h3>
-      <p>Description de ton deuxième projet.</p>
-      <a href="#">Voir le projet</a>
+  <!-- À propos -->
+  <section id="about" class="section">
+    <div class="container about-grid">
+      <div>
+        <h3>À propos</h3>
+        <p>
+          Je suis <strong>Mouhamed DIAGNE</strong>, passionné par la communication visuelle et le digital.
+          Mon objectif : transformer une idée en un visuel clair, esthétique et efficace. J’accompagne associations,
+          clubs et petites entreprises sur leurs besoins graphiques : logos, affiches d’événements, menus, bannières,
+          visuels social media et kits de marque.
+        </p>
+        <div class="skills">
+          <span>Logo Design</span><span>Affiches & Flyers</span><span>Branding</span>
+          <span>Direction Artistique</span><span>Content Management</span><span>Social Media</span>
+        </div>
+      </div>
+      <aside class="card facts">
+        <h4>Infos rapides</h4>
+        <ul>
+          <li>🎓 L2 Communication Digitale — UNCHK</li>
+          <li>📍 Sénégal</li>
+          <li>✉️ mouhameddiagne783@gmail.com</li>
+          <li>📞 +221 70 582 36 56</li>
+        </ul>
+      </aside>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email : <a href="mailto:Mouhameddiagne783@gmail.com">Mouhameddiagne783@gmail.com</a></p>
-    <p>Téléphone : <a href="tel:+221705823656">+221 70 582 36 56</a></p>
+  <!-- Portfolio -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h3>Portfolio</h3>
+
+      <!-- Filtres -->
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">Tout</button>
+        <button class="filter-btn" data-filter="affiche">Affiches</button>
+        <button class="filter-btn" data-filter="logo">Logos</button>
+        <button class="filter-btn" data-filter="branding">Branding / Menu</button>
+      </div>
+
+      <!-- Grille projets -->
+      <div class="grid">
+        <!-- ==== AFFICHES ==== -->
+        <article class="card project affiche">
+          <img src="assets/img/affiche-picnic-color-party.jpg" alt="Affiche Picnic Color Party" />
+          <div class="p-body">
+            <h4>Picnic Color Party</h4>
+            <p>Affiche événement — Club Communication Digitale (ENO Saint-Louis).</p>
+          </div>
+        </article>
+
+        <article class="card project affiche">
+          <img src="assets/img/affiche-set-setal.jpg" alt="Affiche Journée de Set Setal" />
+          <div class="p-body">
+            <h4>Journée de Set Setal</h4>
+            <p>Affiche de mobilisation — Club Communication Digitale.</p>
+          </div>
+        </article>
+
+        <article class="card project affiche">
+          <img src="assets/img/affiche-magal.jpg" alt="Affiche Magal 18 Safar" />
+          <div class="p-body">
+            <h4>18 Safar — Magal</h4>
+            <p>Visuel commémoratif — Direction artistique & composition.</p>
+          </div>
+        </article>
+
+        <article class="card project affiche">
+          <img src="assets/img/affiche-debattons-ism.jpg" alt="Affiche Débattons ISM" />
+          <div class="p-body">
+            <h4>Débattons — ISM</h4>
+            <p>Affiche débat : Développement au Sénégal (BDE ISM).</p>
+          </div>
+        </article>
+
+        <article class="card project affiche">
+          <img src="assets/img/affiche-48h-esebat.jpg" alt="Affiche 48h d’intégration ESEBAT" />
+          <div class="p-body">
+            <h4>48h d’intégration — ESEBAT</h4>
+            <p>Affiche programme sur 2 jours : conférences & activités.</p>
+          </div>
+        </article>
+
+        <article class="card project affiche">
+          <img src="assets/img/affiche-solidarism.jpg" alt="Affiche Solidar’ISM" />
+          <div class="p-body">
+            <h4>Solidar’ISM</h4>
+            <p>Affiche sensibilisation — ISM au service de la communauté.</p>
+          </div>
+        </article>
+
+        <article class="card project affiche">
+          <img src="assets/img/affiche-miss-gueye-maad.jpg" alt="Affiche boisson Miss Gueye Maad" />
+          <div class="p-body">
+            <h4>Miss Gueye — Maad</h4>
+            <p>Affiche publicitaire boisson (tamarin) — Pricing & QR.</p>
+          </div>
+        </article>
+
+        <!-- ==== BRANDING / MENU ==== -->
+        <article class="card project branding">
+          <img src="assets/img/menu-oumou-kebe.jpg" alt="Menu restaurant Oumou Kébé" />
+          <div class="p-body">
+            <h4>Oumou Kébé — Menu</h4>
+            <p>Création de menu & mise en page — Pâtisserie & fast-food.</p>
+          </div>
+        </article>
+
+        <!-- ==== LOGOS ==== -->
+        <article class="card project logo">
+          <img src="assets/img/logo-cartora.jpg" alt="Logo Cartora" />
+          <div class="p-body">
+            <h4>Cartora</h4>
+            <p>Logo e-commerce — chariot minimal violet & orange.</p>
+          </div>
+        </article>
+
+        <article class="card project logo">
+          <img src="assets/img/logo-moozy.jpg" alt="Logo Moozy" />
+          <div class="p-body">
+            <h4>Moozy</h4>
+            <p>Logo retail — typographie avec globe & sacs.</p>
+          </div>
+        </article>
+
+        <article class="card project logo">
+          <img src="assets/img/logo-fa-senteur.jpg" alt="Logo FA Senteur" />
+          <div class="p-body">
+            <h4>FA Senteur</h4>
+            <p>Logo parfum — flacon stylisé & baseline “Luxe et Liberté”.</p>
+          </div>
+        </article>
+
+        <article class="card project logo">
+          <img src="assets/img/logo-visiocare.jpg" alt="Logo VISIOCare" />
+          <div class="p-body">
+            <h4>VISIOCare</h4>
+            <p>Logo santé — œil & mains protectrices.</p>
+          </div>
+        </article>
+
+        <article class="card project logo">
+          <img src="assets/img/logo-sommet.jpg" alt="Logo SOMMET" />
+          <div class="p-body">
+            <h4>Sommet</h4>
+            <p>Logo corporate — pic montagne & typographie claire.</p>
+          </div>
+        </article>
+
+        <article class="card project logo">
+          <img src="assets/img/logo-protect-me.jpg" alt="Logo ProtectMe" />
+          <div class="p-body">
+            <h4>ProtectMe</h4>
+            <p>Logo cause animale — empreinte & typographie.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 - Mouhamed Diagne</p>
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h3>Contact</h3>
+      <p class="lead">Un projet de logo, d’affiche ou de kit social media ? Parlons-en.</p>
+
+      <div class="contact-grid">
+        <div class="card">
+          <h4>Coordonnées</h4>
+          <ul class="contact-list">
+            <li>✉️ <a href="mailto:mouhameddiagne783@gmail.com">mouhameddiagne783@gmail.com</a></li>
+            <li>📞 <a href="tel:+221705823656">+221 70 582 36 56</a></li>
+          </ul>
+        </div>
+
+        <form class="card" name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact">
+          <label>Nom
+            <input type="text" name="name" required>
+          </label>
+          <label>Email
+            <input type="email" name="email" required>
+          </label>
+          <label>Message
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button class="btn primary" type="submit">Envoyer</button>
+          <p class="form-note">Ou écris-moi directement par email/WhatsApp.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Mouhamed Diagne — Tous droits réservés.</p>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
