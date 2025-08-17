@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mouhamed DIAGNE — Portfolio</title>
+  <meta name="description" content="Portfolio de Mouhamed DIAGNE, étudiant en L2 Communication digitale à l’UNCHK. Projets, blog et contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,  %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%23000'/%3E%3Ctext x='50' y='58' text-anchor='middle' font-family='Inter' font-size='54' fill='white'%3EMD%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="Retour en haut">
+      <span class="logo-mark">MD</span>
+      <span class="sr-only">Mouhamed DIAGNE</span>
+    </a>
+    <nav class="site-nav" aria-label="Navigation principale">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Ouvrir le menu">☰</button>
+      <ul id="nav-list">
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#a-propos">À propos</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="themeToggle" class="theme-toggle" aria-label="Changer de thème">◐</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="titre-hero">
+      <div class="hero-content">
+        <h1 id="titre-hero">Salut, moi c’est <span class="accent">Mouhamed DIAGNE</span> 👋</h1>
+        <p class="lead">
+          Étudiant en <strong>L2 Communication digitale</strong> à l’<strong>UNCHK</strong>.
+          Je conçois des identités visuelles, interfaces et contenus pour le web.
+        </p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#projets">Voir mes projets</a>
+          <a class="btn ghost" href="#contact">Me contacter</a>
+        </div>
+        <ul class="badges" aria-label="Compétences clés">
+          <li>Branding</li>
+          <li>UI/UX</li>
+          <li>Rédaction web</li>
+          <li>Réseaux sociaux</li>
+        </ul>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 600 400" role="img" aria-label="Illustration abstraite">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="var(--accent)"/>
+              <stop offset="100%" stop-color="var(--accent-2)"/>
+            </linearGradient>
+          </defs>
+          <circle cx="120" cy="120" r="110" fill="url(#g1)" opacity="0.9"/>
+          <rect x="240" y="60" width="260" height="260" rx="32" fill="url(#g1)" opacity="0.3"/>
+          <circle cx="500" cy="100" r="60" fill="url(#g1)" opacity="0.6"/>
+          <circle cx="60" cy="340" r="40" fill="url(#g1)" opacity="0.6"/>
+        </svg>
+      </div>
+    </section>
+
+    <section id="projets" class="section" aria-labelledby="titre-projets">
+      <div class="container">
+        <h2 id="titre-projets">Projets</h2>
+        <p class="section-intro">Une sélection de travaux récents. Cliquez pour en savoir plus.</p>
+
+        <div class="filters" role="tablist" aria-label="Filtrer les projets">
+          <button class="chip active" data-filter="all" role="tab" aria-selected="true">Tout</button>
+          <button class="chip" data-filter="branding" role="tab">Branding</button>
+          <button class="chip" data-filter="uiux" role="tab">UI/UX</button>
+          <button class="chip" data-filter="social" role="tab">Social Media</button>
+        </div>
+
+        <div class="grid projects">
+          <!-- Projet 1 -->
+          <article class="card project" data-tags="branding">
+            <a href="#" class="project-link" data-modal="p1">
+              <figure>
+                <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=1200&q=60" alt="Identité visuelle — Logo et charte graphique" loading="lazy" />
+                <figcaption>Identité visuelle — marque locale</figcaption>
+              </figure>
+            </a>
+            <div class="card-body">
+              <h3>Identité visuelle — Teranga Café</h3>
+              <p>Création de logo, palette et système visuel pour une marque de café.</p>
+              <ul class="tags"><li>Branding</li><li>Direction artistique</li></ul>
+            </div>
+          </article>
+
+          <!-- Projet 2 -->
+          <article class="card project" data-tags="uiux">
+            <a href="#" class="project-link" data-modal="p2">
+              <figure>
+                <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1200&q=60" alt="Interface mobile — maquette UI" loading="lazy" />
+                <figcaption>Application mobile — UI Kit</figcaption>
+              </figure>
+            </a>
+            <div class="card-body">
+              <h3>Application mobile — UI/UX</h3>
+              <p>Conception de parcours, wireframes et maquettes haute fidélité.</p>
+              <ul class="tags"><li>UI</li><li>UX</li><li>Prototypage</li></ul>
+            </div>
+          </article>
+
+          <!-- Projet 3 -->
+          <article class="card project" data-tags="social">
+            <a href="#" class="project-link" data-modal="p3">
+              <figure>
+                <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1200&q=60" alt="Campagne réseaux sociaux" loading="lazy" />
+                <figcaption>Campagne réseaux sociaux</figcaption>
+              </figure>
+            </a>
+            <div class="card-body">
+              <h3>Campagne social media</h3>
+              <p>Calendrier éditorial, templates et contenus pour Instagram & X.</p>
+              <ul class="tags"><li>Social</li><li>Contenu</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Modales projets -->
+      <div class="modal" id="p1" aria-hidden="true" role="dialog" aria-labelledby="p1-title">
+        <div class="modal-content">
+          <button class="modal-close" aria-label="Fermer">×</button>
+          <h3 id="p1-title">Teranga Café — Identité visuelle</h3>
+          <p>Création d’un système visuel complet : logo, typographies, couleurs, packaging et guidelines.</p>
+          <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=1600&q=60" alt="Mockups Teranga Café" />
+        </div>
+      </div>
+      <div class="modal" id="p2" aria-hidden="true" role="dialog" aria-labelledby="p2-title">
+        <div class="modal-content">
+          <button class="modal-close" aria-label="Fermer">×</button>
+          <h3 id="p2-title">Application mobile — UI/UX</h3>
+          <p>Parcours utilisateurs, tests et maquettes haute fidélité. Prototypage interactif.</p>
+          <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1600&q=60" alt="Écrans UI mobile" />
+        </div>
+      </div>
+      <div class="modal" id="p3" aria-hidden="true" role="dialog" aria-labelledby="p3-title">
+        <div class="modal-content">
+          <button class="modal-close" aria-label="Fermer">×</button>
+          <h3 id="p3-title">Campagne social media</h3>
+          <p>Plan éditorial, création de templates, production de contenus et analyse des performances.</p>
+          <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1600&q=60" alt="Mockups posts réseaux sociaux" />
+        </div>
+      </div>
+    </section>
+
+    <section id="a-propos" class="section alt" aria-labelledby="titre-a-propos">
+      <div class="container about">
+        <div>
+          <h2 id="titre-a-propos">À propos</h2>
+          <p>
+            Je m’appelle <strong>Mouhamed DIAGNE</strong>, étudiant en <strong>L2 Communication digitale</strong> à l’<strong>UNCHK</strong>.
+            Passionné par le design et la stratégie de contenu, j’aime transformer des idées en expériences claires et utiles.
+          </p>
+          <ul class="list">
+            <li><strong>Compétences :</strong> Identité visuelle, UI/UX, rédaction web, community management</li>
+            <li><strong>Outils :</strong> Figma, Adobe Illustrator, Photoshop, Notion</li>
+            <li><strong>Langues :</strong> Français (courant)</li>
+          </ul>
+          <div class="cv-actions">
+            <a class="btn small" href="mailto:contact@mouhameddiagne.dev">Me proposer un projet</a>
+            <a class="btn small ghost" href="#" aria-disabled="true" title="Bientôt disponible">Télécharger mon CV (bientôt)</a>
+          </div>
+        </div>
+        <aside class="about-card" aria-label="Carte de profil">
+          <div class="avatar" aria-hidden="true">MD</div>
+          <p class="muted">Disponible pour stage/alternance</p>
+          <ul class="social">
+            <li><a href="#" aria-label="Mon Behance">Behance</a></li>
+            <li><a href="#" aria-label="Mon Dribbble">Dribbble</a></li>
+            <li><a href="#" aria-label="Mon LinkedIn">LinkedIn</a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="blog" class="section" aria-labelledby="titre-blog">
+      <div class="container">
+        <h2 id="titre-blog">Blog</h2>
+        <p class="section-intro">Des notes sur le design, la communication digitale et mes inspirations.</p>
+        <div class="grid blog">
+          <article class="card post">
+            <a class="stretched" href="#">
+              <h3>Pourquoi le design doit raconter une histoire</h3>
+              <p>Au-delà du look, une identité réussie porte un récit clair et mémorable…</p>
+              <time datetime="2025-08-01">1 août 2025</time>
+            </a>
+          </article>
+          <article class="card post">
+            <a class="stretched" href="#">
+              <h3>UI/UX : 5 erreurs fréquentes à éviter</h3>
+              <p>Contraste insuffisant, surcharge d’infos, microcopie floue… mes astuces pratiques.</p>
+              <time datetime="2025-07-15">15 juillet 2025</time>
+            </a>
+          </article>
+          <article class="card post">
+            <a class="stretched" href="#">
+              <h3>Créer un calendrier éditorial simple</h3>
+              <p>Une méthode efficace pour planifier et mesurer vos contenus sociaux.</p>
+              <time datetime="2025-06-20">20 juin 2025</time>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt" aria-labelledby="titre-contact">
+      <div class="container">
+        <h2 id="titre-contact">Contact</h2>
+        <p class="section-intro">Un projet, une collaboration ou juste envie d’échanger ? Écris-moi.</p>
+        <form id="contactForm" class="contact-form" action="mailto:contact@mouhameddiagne.dev" method="POST" enctype="text/plain">
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Nom</label>
+              <input id="name" name="name" type="text" placeholder="Ton nom" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="ton@email.com" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Ton message…" required></textarea>
+          </div>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Envoyer</button>
+            <span class="muted small">Astuce : tu peux remplacer ce formulaire par Formspree ou Netlify Forms.</span>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container ftr">
+      <p>© <span id="year"></span> Mouhamed DIAGNE — Tous droits réservés.</p>
+      <a href="#top" class="back-to-top" aria-label="Retour en haut">↑</a>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
